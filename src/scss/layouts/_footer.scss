@@ -1,0 +1,163 @@
+.main-footer {
+    background-color: $background-light;
+    padding-bottom: 15px;
+
+    .mini-sitemap {
+        border-bottom: 1px solid $brand-primary;
+        > .container {
+            height: 72px;
+            .lite-duo-divider {
+                float: left;
+                max-width: 50%;
+                width: 100%;
+                height: 100%;   
+                .footer-logo-wrapper {
+                    padding: 12px 0;
+                    width: 287px;
+                    > img {
+                        max-width: 100%;
+                        height: auto;
+                    }   
+                }
+            }
+        }
+        .links {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            > a {
+                display: inline-block;
+                margin: 0 13px;
+                padding: 10px;
+                @extend .link-cleanup;
+            }
+        }
+    }
+    .reachout-through {
+        padding: 40px 0 60px;
+        font-size: 16px;
+        > .container {
+            display: flex;
+        }
+        .headline {
+            letter-spacing: 3px;
+        }
+        .address-wrapper,
+        .contact-wrapper,
+        .socials-wrapper {
+            margin-right: 30px;
+        }
+        .address-wrapper {
+            max-width: 264px;
+            width: 100%;
+        }
+        .contact-wrapper {
+            max-width: 192px;
+            width: 100%;
+            a {
+                color: #003a70;
+                @extend .link-cleanup;
+            }
+        }
+        .socials-wrapper {
+            max-width: 192px;
+            width: 100%;
+            .socialmedia-wrapper {
+                display: flex;
+            }
+        }
+        .socialmedia {
+            margin-right: 25px;
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            text-decoration: none !important;
+            &.fb, &.tw, &.yt {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 30px;
+                @extend .link-cleanup;
+            }
+        }
+    }
+    .copyright {
+        margin: 0;
+    }
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+    .main-footer .mini-sitemap > .container .lite-duo-divider .footer-logo-wrapper {
+        max-width: 210px;
+        padding: 18px 0;
+    }
+}
+@media screen and (max-width: 828px) {
+    
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 667px) {
+    .main-footer .mini-sitemap .links > a {
+        padding: 5px;
+        margin: 5px;
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .main-footer .reachout-through .address-wrapper, .main-footer .reachout-through .contact-wrapper, .main-footer .reachout-through .socials-wrapper {
+        margin: 5px;
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .main-footer .copyright {
+        text-align: center;
+        > small {
+            display: block;
+            margin-bottom: 10px;
+        }
+        > a {
+            display: inline-block;
+            float: none !important;
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .main-footer .mini-sitemap > .container .lite-duo-divider .footer-logo-wrapper {
+        display: none;
+    }
+    .main-footer .mini-sitemap > .container .lite-duo-divider {
+        float: none;
+        max-width: 100%;
+        width: 100%;
+        height: 70px;
+    }
+    .main-footer .mini-sitemap > .container .lite-duo-divider.logo {
+        display: none;
+    }
+    .main-footer .mini-sitemap > .container .lite-duo-divider.links {
+        font-size: 16px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .main-footer .reachout-through > .container {
+        display: block;
+    }
+    .main-footer .reachout-through .address-wrapper, .main-footer .reachout-through .contact-wrapper, .main-footer .reachout-through .socials-wrapper {
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 20px 15px 0;
+    }
+    .main-footer .reachout-through {
+        padding: 0 0 30px;
+    }
+    .main-footer .copyright {
+        font-size: 14px;
+        text-align: center;
+    }
+}
