@@ -1,0 +1,78 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~owl.carousel/dist/assets/owl.carousel.css';
+@import 'font-awesome';
+@import 'fonts';
+@import 'components/normalize';
+@import 'components/variables';
+@import 'components/typography';
+/* Components */
+@import 'layouts/header';
+@import 'layouts/footer';
+/* Pages */
+@import 'pages/base';
+/* Overrides */
+
+
+@media (min-width: 1400px){
+.container, .container-lg, 
+.container-md, 
+.container-sm, 
+.container-xl, 
+    .container-xxl {
+        max-width: 1128px;
+    }
+}
+body {
+    color: $text-color;
+    height: 100%;
+    background-color: $white;
+}
+.context-zone {
+    padding: 0;
+    @media screen and (max-width: 828px) {
+    }
+}
+.clearfix {
+    content: '';
+    clear: both;
+}
+.owl-carousel {
+    .owl-item a {
+        @extend .link-cleanup;
+    }
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+    
+}
+@media screen and (max-width: 828px) {
+    
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 667px) {
+
+}
+@media screen and (max-width: 480px) {
+        
+}
+
+* {
+    box-sizing: border-box;
+}
+.elipsis-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.psmo-custom-modal iframe {
+    @media screen and (min-width: 1024px) {
+        height: 600px !important;
+    }
+    @media screen and (max-width: 1023px) {
+        height: 60vw !important;
+    }
+}
