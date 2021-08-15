@@ -2800,6 +2800,9 @@ template {
 [hidden] {
   display: none; }
 
+aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block; }
+
 .link-cleanup, .desktop-navigation .navigation-list > li > a, .desktop-navigation .inner-navigation > li > a, .burger-navigation-wrapper .search-btn,
 .burger-navigation-wrapper .burger-btn, .main-footer .mini-sitemap .links > a, .main-footer .reachout-through .contact-wrapper a, .main-footer .reachout-through .socialmedia.fb, .main-footer .reachout-through .socialmedia.tw, .main-footer .reachout-through .socialmedia.yt, .owl-carousel .owl-item a {
   text-decoration: none;
